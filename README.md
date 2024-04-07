@@ -7,7 +7,6 @@ This repository contains a tutorial for using the Langchain library, a powerful 
 - [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
-- [Installation](#installation)
 
 
 ## Introduction
