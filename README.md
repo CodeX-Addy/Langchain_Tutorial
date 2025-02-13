@@ -19,8 +19,8 @@ In this tutorial, you'll learn how to use Langchain to build various types of ap
 
 Before getting started, make sure you have the following installed:
 
-- Python 3.7 or later
-- pip (the Python package installer)
+- Python 3.8 or later
+- langchain + related requirements
 
 ## Getting Started
 
