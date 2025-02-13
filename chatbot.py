@@ -1,8 +1,7 @@
-import requests
 import json
+import requests
 import gradio as gr
 from gradio import Textbox, Interface
-
 
 url = "http://localhost:11434/api/generate"
 
@@ -12,10 +11,8 @@ headers = {
 
 conversation_history = []
 
-
 def generate_response(prompt):
     conversation_history.append(prompt)
-
     full_prompt = "\n".join(conversation_history)
 
     data = {
@@ -36,7 +33,7 @@ def generate_response(prompt):
         print("Error:", response.status_code, response.text)
         return None
 
-#Gradio interface
+## Gradio interface
 face = Interface(
     fn=generate_response,
     inputs=Textbox(
