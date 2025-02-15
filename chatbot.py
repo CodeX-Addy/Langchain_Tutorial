@@ -9,6 +9,7 @@ headers = {
     'Content-Type': 'application/json',
 }
 
+## Maintains history
 conversation_history = []
 
 def generate_response(prompt):
