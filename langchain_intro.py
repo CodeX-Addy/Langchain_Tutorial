@@ -11,7 +11,6 @@ class HandleLLMSummary():
         summary_query = f"Generate a concise summary of the following response: {response.content}"
         return self.model.invoke(summary_query).content
 
-
 if not os.environ.get("GOOGLE_API_KEY"):
   os.environ["GOOGLE_API_KEY"] = getpass.getpass(
       "Enter API key for Google Gemini: ")
@@ -23,6 +22,5 @@ response = HandleLLMSummary().model.invoke(user_input)
 print(response.content)
 
 print("\nGenerating summary...\n")
-summary_generator = HandleLLMSummary()
-summary = summary_generator.generate_summary(response)
+summary = HandleLLMSummary().generate_summary(response)
 print(summary)
