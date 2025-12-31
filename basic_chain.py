@@ -10,7 +10,7 @@ callback_manager = CallbackManager([StreamingStdOutCallbackHandler()]), temperat
 ## Basic Q&A Chain
 prompt = PromptTemplate(
     input_variables = ["topic"],
-    template = "Tell me about this topic {topic}"
+    template = "Tell me about this topic: {topic}"
 )
 
 chain = LLMChain(llm=llm, prompt=prompt)
