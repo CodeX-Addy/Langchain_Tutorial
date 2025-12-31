@@ -1,6 +1,6 @@
 # Langchain Tutorial
 
-This repository contains a tutorial for using the Langchain library, a powerful framework for building applications with large language models (LLMs).
+This repository contains a tutorial for using the Langchain framework, a powerful framework for building applications with large language models (LLMs).
 
 ## Table of Contents
 
