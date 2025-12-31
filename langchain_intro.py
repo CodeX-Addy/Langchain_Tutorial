@@ -2,6 +2,8 @@ import getpass
 import os
 from langchain.chat_models import init_chat_model
 
+## Change the best model as per the availabilty
+
 class HandleLLMSummary():
     def __init__(self):
         self.model = init_chat_model(
