@@ -34,7 +34,7 @@ def generate_response(prompt):
         print("Error:", response.status_code, response.text)
         return None
 
-## Gradio interface
+## Gradio user interface
 face = Interface(
     fn=generate_response,
     inputs=Textbox(
