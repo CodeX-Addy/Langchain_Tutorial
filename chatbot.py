@@ -9,7 +9,7 @@ headers = {
     'Content-Type': 'application/json',
 }
 
-## Maintains history
+## Maintains history -> For prod, use semantic caching or any memory store
 conversation_history = []
 
 def generate_response(prompt):
