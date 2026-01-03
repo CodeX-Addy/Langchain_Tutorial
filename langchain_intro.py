@@ -1,3 +1,5 @@
+## Example 1
+'''
 import getpass
 import os
 from langchain.chat_models import init_chat_model
@@ -26,3 +28,15 @@ print(response.content)
 print("\nGenerating summary...\n")
 summary = HandleLLMSummary().generate_summary(response)
 print(summary)
+'''
+
+## Example 2 -> with openai key
+
+from langchain_openai import ChatOpenAI
+from dotenv import load_dotenv
+
+load_dotenv()
+
+model = ChatOpenAI(model="gpt-4o", temperature=0)
+result = model.invoke("Hello")
+print(result.content)
