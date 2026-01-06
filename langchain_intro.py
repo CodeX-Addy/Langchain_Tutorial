@@ -30,7 +30,7 @@ summary = HandleLLMSummary().generate_summary(response)
 print(summary)
 '''
 
-## Example 2 -> with openai key
+## Example 2 -> with openai api key
 
 from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
