@@ -10,6 +10,4 @@ chain = prompt | model | StrOutputParser()
 
 upper = RunnableLambda(lambda x: x.upper())
 result = chain | upper
-
 print(result.invoke({"topic": "APIs"}))
- 
